@@ -1,6 +1,6 @@
 # References
 
-`
+```
 git status  
  docker build --tag c0883900-node-assignment3 .  
  docker images  
@@ -31,4 +31,4 @@ docker run --detach --publish 3000:80 -e PORT=80 NAME=C1 c088390...
 docker run --detach --publish 3001:8080 -e PORT=80 -e NAME=C1 c0...
 history
 
-`
+```
