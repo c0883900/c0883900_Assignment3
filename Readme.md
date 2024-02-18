@@ -47,3 +47,15 @@ docker run --detach --publish 3001:8080 -e PORT=80 -e NAME=C1 c0883900-node-assi
 ```
 docker run --detach --publish 3000 --env-file my-env.txt c0883900-node-assignment3:latest
 ```
+### Tag your recently created image to publish on docker hub registry
+```
+docker image tag c0883900-node-assignment3:latest dheepasri/c0883900-node-assignment3:1.0.0
+docker images
+docker login
+docker push dheepasri/c0883900-node-assignment3:1.0.0                   
+```
+### Pull and run the recently post image on your local docker environment
+```
+docker pull dheepasri/c0883900-node-assignment3:1.0.0
+docker run -d -p  3000:3000 dheepasri/c0883900-node-assignment3:1.0.0
+```  
